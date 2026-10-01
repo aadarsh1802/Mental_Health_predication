@@ -219,7 +219,7 @@ export default function App() {
     try {
 
       const response = await fetch(
-        "https://mental-health-predication.onrender.com",
+        "https://mental-health-predication.onrender.com/predict",
         {
           method: "POST",
 
@@ -243,6 +243,7 @@ export default function App() {
 
       }
 
+      
 
       console.log(
         "FastAPI response:",
