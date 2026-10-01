@@ -752,7 +752,7 @@ export default function App() {
                           : "--"}
 
                         <span>
-                          {" "} / 100
+                          {" "} / 10
                         </span>
 
                       </div>
