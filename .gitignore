@@ -5,7 +5,7 @@ venv/
 env/
 .ipynb_checkpoints/
 .pytest_cache/
-*.pkl
+
 *.joblib
 data/raw/*
 data/processed/*
