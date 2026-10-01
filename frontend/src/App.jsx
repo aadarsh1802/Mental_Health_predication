@@ -309,12 +309,7 @@ export default function App() {
                 Predict Your Mental Health Score
               </h1>
 
-              <p>
-                Get insights into how your lifestyle,
-                social media usage and daily habits{" "}
-                <br />
-                may be affecting your mental well-being.
-              </p>
+
 
             </div>
 
@@ -703,103 +698,7 @@ export default function App() {
                   PREDICTION RESULT
               ========================= */}
 
-              <section className="prediction-card" id="model-performance">
 
-                <div className="prediction-main">
-
-                  <div className="prediction-icon">
-                    <Brain size={31} />
-                  </div>
-
-
-                  <div>
-
-                    <div className="prediction-label">
-                      Predicted Mental Health Score
-                    </div>
-
-
-                    <div className="big-score">
-
-                      {score !== null
-                        ? Number(score).toFixed(2)
-                        : "--"}
-
-                      <span>
-                        {" "} / 100
-                      </span>
-
-                    </div>
-
-
-                    {category && (
-
-                      <div className="risk-badge">
-                        {category}
-                      </div>
-
-                    )}
-
-
-                    <p>
-                      This score is based on our trained
-                      machine learning model and may not
-                      be a definitive diagnosis.
-                      Consider professional help if needed.
-                    </p>
-
-                  </div>
-
-                </div>
-
-
-                <div className="model-performance">
-
-                  <h3>
-                    Model Performance
-                  </h3>
-
-
-                  <div className="perf-row">
-
-                    <Target size={22} />
-
-                    <div>
-
-                      <small>
-                        Mean Absolute Error (MAE)
-                      </small>
-
-                      <strong>
-                        6.42
-                      </strong>
-
-                    </div>
-
-                  </div>
-
-
-                  <div className="perf-row">
-
-                    <BarChart3 size={22} />
-
-                    <div>
-
-                      <small>
-                        R² Score
-                      </small>
-
-                      <strong>
-                        0.68
-                      </strong>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </section>
 
             </div>
 
@@ -813,27 +712,122 @@ export default function App() {
 
               {/* DATASET INSIGHTS */}
 
-            
+
 
 
               {/* CHART */}
 
-              
+
 
 
               {/* DATASET PREVIEW */}
 
-              
+
 
 
               {/* KEY TAKEAWAYS */}
 
               <section className="takeaways" id="takeaways">
+                <section className="prediction-card" id="model-performance">
 
+                  <div className="prediction-main">
+
+                    <div className="prediction-icon">
+                      <Brain size={31} />
+                    </div>
+
+
+                    <div>
+
+                      <div className="prediction-label">
+                        Predicted Mental Health Score
+                      </div>
+
+
+                      <div className="big-score">
+
+                        {score !== null
+                          ? Number(score).toFixed(2)
+                          : "--"}
+
+                        <span>
+                          {" "} / 100
+                        </span>
+
+                      </div>
+
+
+                      {category && (
+
+                        <div className="risk-badge">
+                          {category}
+                        </div>
+
+                      )}
+
+
+                      <p>
+                        This score is based on our trained
+                        machine learning model and may not
+                        be a definitive diagnosis.
+                        Consider professional help if needed.
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className="model-performance">
+
+                    <h3>
+                      Model Performance
+                    </h3>
+
+
+                    <div className="perf-row">
+
+                      <Target size={22} />
+
+                      <div>
+
+                        <small>
+                          Mean Absolute Error (MAE)
+                        </small>
+
+                        <strong>
+                          6.42
+                        </strong>
+
+                      </div>
+
+                    </div>
+
+
+                    <div className="perf-row">
+
+                      <BarChart3 size={22} />
+
+                      <div>
+
+                        <small>
+                          R² Score
+                        </small>
+
+                        <strong>
+                          0.68
+                        </strong>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </section>
+                <br></br>
                 <h2>
-
                   <Sparkles size={19} />
-
                   Key Takeaways
 
                 </h2>

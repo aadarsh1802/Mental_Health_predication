@@ -101,14 +101,14 @@ button, select { font: inherit; }
   grid-template-columns: 1.35fr .85fr;
   padding: 16px 18px;
 }
-.prediction-main { display: flex; gap: 14px; }
+.prediction-main { display: flex; gap: 14px; padding: 16px;}
 .prediction-icon { color: #13a16d; padding-top: 4px; }
 .prediction-label { color: #16305e; font-weight: 600; font-size: 14px; }
 .big-score { color: #078f6b; font-size: 34px; font-weight: 800; line-height: 1.2; margin: 2px 0 2px; }
 .big-score span { font-size: 16px; font-weight: 600; }
 .risk-badge { display: inline-block; background: #ffe79a; color: #a56b00; border-radius: 20px; padding: 4px 12px; font-size: 11px; font-weight: 600; }
 .prediction-card p { color: #52677f; font-size: 10px; line-height: 1.45; margin: 8px 0 0; }
-.model-performance { border-left: 1px solid #cde8db; padding-left: 18px; }
+.model-performance { border-left: 1px solid #cde8db; padding-left: 18px; padding-bottom: 16px;  margin-bottom: 16px;}
 .model-performance h3 { margin: 0 0 12px; font-size: 13px; }
 .perf-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; color: #6b51e9; }
 .perf-row small { display: block; font-size: 9px; color: #536681; }
